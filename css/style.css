@@ -33,13 +33,17 @@ body{
 
 /* Products */
 
-.cards{
-    height: 450px;
+.main-card{
+    height: 600px;
     width: calc(100% / 3 - 9px);
-    background-color: #EEEEEE;
     margin: 0 3px;
     position: relative;
     display: inline-block;
+}
+
+.image{
+    height: 500px;
+    background-color: #eee;
 }
 
 .description{
@@ -47,84 +51,77 @@ body{
     margin: 4px 3px;
     font-size: 0.9em;
     position: absolute;
-    bottom: -90px;
-
+    bottom: 8px;
 }
 
 /* Cards */
 
-.cards.card-1{
+.image.card-1{
     background-image: url(../img/1.webp);
     background-size: cover;
 }
 
-.cards.card-1:hover{
+.image.card-1:hover{
     background-image: url(../img/1b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
     background-size: cover;
 }
 
-.cards.card-2{
+.image.card-2{
     background-image: url(../img/2.webp);
     background-size: cover;
 }
 
-.cards.card-2:hover{
+.image.card-2:hover{
     background-image: url(../img/2b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
     background-size: cover;
 }
 
-.cards.card-3{
+.image.card-3{
     background-image: url(../img/3.webp);
     background-size: cover;
 }
 
-.cards.card-3:hover{
+.image.card-3:hover{
     background-image: url(../img/3b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
     background-size: cover;
 }
 
-.cards.card-4{
+.image.card-4{
     background-image: url(../img/4.webp);
     background-size: cover;
-    position: relative;
-    top: 100px;
 }
 
-.cards.card-4:hover{
+.image.card-4:hover{
     background-image: url(../img/4b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
     background-size: cover;
 }
 
-.cards.card-5{
+.image.card-5{
     background-image: url(../img/5.webp);
     background-size: cover;
-    position: relative;
-    top: 100px;
 }
 
-.cards.card-5:hover{
+.image.card-5:hover{
     background-image: url(../img/5b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
     background-size: cover;
 }
 
-.cards.card-6{
+.image.card-6{
     background-image: url(../img/6.webp);
     background-size: cover;
-    position: relative;
-    top: 100px;
 }
 
-.cards.card-6:hover{
+.image.card-6:hover{
     background-image: url(../img/6b.webp);
     transition: ease-in-out;
     transition-duration: 0.5s;
@@ -140,7 +137,7 @@ body{
     height: 18px;
     width: 33px;
     position: absolute;
-    bottom: 15px;
+    bottom: 110px;
     color: white;
     font-weight: bold;
     font-size: 0.7em;
@@ -153,13 +150,17 @@ body{
     height: 18px;
     width: 80px;
     position: absolute;
-    bottom: 15px;
+    bottom: 110px;
     left: 37.5px;
     color: white;
     font-weight: bold;
     font-size: 0.75em;
     text-align: center;
     line-height: 18px;
+}
+
+.card-6 > .green-tag{
+    left: 0;
 }
 
 .favourite::after{
