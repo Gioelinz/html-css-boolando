@@ -185,4 +185,8 @@ body{
     transform: scale(1.2);
 }
 
-
+a{
+    position: relative;
+    left: 50%;
+    bottom: 50px;
+}
