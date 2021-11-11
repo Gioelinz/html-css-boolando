@@ -7,13 +7,13 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Utils */
 
 .container{
-    max-width: 1000px;
+    width: 1080px;
     margin: 0 auto;
 }
 
@@ -21,20 +21,96 @@ body{
     margin: 30px;
 }
 
+.sale-price{
+    color: red;
+    font-weight: bold;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+
 /* Products */
 
 .cards{
     height: 450px;
-    width: calc(100% / 3 - 10px);
-    background-color: #E3E3E3;
-    display: inline-block;
+    width: calc(100% / 3);
+    background-color: #EEEEEE;
     margin: 0 3px;
+    position: relative;
+    display: inline-block;
 }
 
 .description{
-    width: calc(100% / 3 - 10px);
-    height: 100px;
-    margin: 0 3px;
-    background-color: lightblue;
+    height: 80px;
+    margin: 4px 3px;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: -90px;
 
 }
+
+/* Cards */
+
+.cards.card-1{
+    background-image: url(../img/1.webp);
+    background-size: cover;
+}
+
+.cards.card-1:hover{
+    background-image: url(../img/1b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+/* Tags */
+
+.sale-50{
+    background-color: red;
+    height: 18px;
+    width: 33px;
+    position: absolute;
+    bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 18px;
+}
+
+.green-tag{
+    background-color: #00875A;
+    height: 18px;
+    width: 80px;
+    position: absolute;
+    bottom: 15px;
+    left: 37.5px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 18px;
+}
+
+.favourite::after{
+    content: '\2665';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 35px;
+    right: 0;
+    top: 14px;
+    cursor: pointer;
+}
+
+.favourite:hover::after{
+    color: red;
+    background-color: #EEEEEE;
+}
+
+
