@@ -35,7 +35,7 @@ body{
 
 .cards{
     height: 450px;
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 9px);
     background-color: #EEEEEE;
     margin: 0 3px;
     position: relative;
@@ -64,6 +64,74 @@ body{
     transition-duration: 0.5s;
     background-size: cover;
 }
+
+.cards.card-2{
+    background-image: url(../img/2.webp);
+    background-size: cover;
+}
+
+.cards.card-2:hover{
+    background-image: url(../img/2b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+.cards.card-3{
+    background-image: url(../img/3.webp);
+    background-size: cover;
+}
+
+.cards.card-3:hover{
+    background-image: url(../img/3b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+.cards.card-4{
+    background-image: url(../img/4.webp);
+    background-size: cover;
+    position: relative;
+    top: 100px;
+}
+
+.cards.card-4:hover{
+    background-image: url(../img/4b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+.cards.card-5{
+    background-image: url(../img/5.webp);
+    background-size: cover;
+    position: relative;
+    top: 100px;
+}
+
+.cards.card-5:hover{
+    background-image: url(../img/5b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+.cards.card-6{
+    background-image: url(../img/6.webp);
+    background-size: cover;
+    position: relative;
+    top: 100px;
+}
+
+.cards.card-6:hover{
+    background-image: url(../img/6b.webp);
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+    background-size: cover;
+}
+
+
 
 /* Tags */
 
